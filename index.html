@@ -194,6 +194,32 @@
         </div>
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const contactForm = document.getElementById('contact-form');
+            const confirmationMessage = document.getElementById('confirmation');
+
+            contactForm.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the form from submitting via HTTP
+
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('phone').value;
+                const address = document.getElementById('address').value;
+                const email = document.getElementById('email').value;
+                const description = document.getElementById('description').value;
+
+                // You can perform further validation here if needed
+
+                // Display a confirmation message
+                confirmationMessage.textContent = `Thank you, ${name}! Your message has been sent.`;
+
+                // Clear the form fields
+                contactForm.reset();
+            });
+        });
+    </script>
+
+
     <footer class="bg-dark text-white text-center py-3">
         <h1 style="padding: 50px;"> All rights reserved by @BISESukkur</h1>
     </footer>
