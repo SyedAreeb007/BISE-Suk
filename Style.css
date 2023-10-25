@@ -21,3 +21,9 @@
     text-decoration: none;
     cursor: pointer; 
 }
+
+#description{
+        width: 5000px; 
+        height: 300px; 
+    
+}
