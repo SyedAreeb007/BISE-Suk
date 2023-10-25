@@ -1,0 +1,23 @@
+.navbar{
+    background-color: rgb(0, 0, 0);
+}
+
+.container1{
+    background-color: rgb(181, 183, 187);
+}
+
+.container2{
+    background-color: rgb(0, 0, 0);
+}
+
+.head2{
+    text-align: center;
+    color: white;
+}
+
+.link-text {
+    text-align: center;
+    color: white; 
+    text-decoration: none;
+    cursor: pointer; 
+}
